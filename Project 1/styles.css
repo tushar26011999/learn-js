@@ -1,0 +1,125 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #48a30012;
+  margin: 0;
+}
+main {
+  margin: 1rem;
+}
+.container {
+  background-color: #fbfbfb;
+  max-width: 38rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #48a300;
+  text-align: center;
+}
+
+h1 span {
+  color: #61481c;
+}
+
+.container img {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: middle;
+}
+.container p {
+  color: #858585;
+}
+.progress-bar {
+  height: 2rem;
+  background-color: #48a3001a;
+  border-radius: 3rem;
+}
+.progress-complete {
+  height: 100%;
+  width: 40%;
+  background-color: #48a300;
+  border-radius: 3rem;
+}
+.steps-count {
+  color: white;
+  padding: 0.3rem 0 0 3rem;
+  display: none;
+}
+.error {
+  color: red;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  margin-block: 1.3rem;
+}
+.goal-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background-color: #fff;
+  margin-block: 2rem;
+}
+.custom-checkbox {
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0 0 1rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goal-input {
+  border: none;
+  font-family: inherit;
+  outline: none;
+  font-size: 1rem;
+  flex-grow: 1;
+  padding-left: 1.6rem;
+  align-self: stretch;
+}
+.goal-input::placeholder {
+  color: #d9d9d9;
+}
+.quote {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.sub-caption {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #858585;
+}
+.check-icon {
+    display: none;
+}
+.completed .check-icon {
+    display: block;
+}
+.completed .custom-checkbox {
+  background-color: #48a300;
+  border-color: #48a300;
+}
+
+.completed .goal-input {
+  color: #48a300;
+  text-decoration-line: line-through;
+}
+
+.error {
+    display: none;
+}
+@media (max-width: 768px) {
+  .goal-container {
+    margin-block: 1rem;
+  }
+  .goal-input {
+    font-size: 0.8rem;
+  }
+}
